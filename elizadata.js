@@ -3,19 +3,19 @@
 // [cf: Communications of the ACM, Vol. 9, #1 (January 1966): p 36-45.]
 
 var elizaInitials = [
-"How do you do.  Please tell me your problem.",
+"What are you doing in my swamp?",
 // additions (not original)
-"Please tell me what's been bothering you.",
-"Is something troubling you ?"
+"How are you today donkey?",
+"Princess?"
 ];
 
 var elizaFinals = [
-"Goodbye.  It was nice talking to you.",
+"Get out me swamp!",
 // additions (not original)
-"Goodbye.  This was really a nice talk.",
-"Goodbye.  I'm looking forward to our next session.",
-"This was a good session, wasn't it -- but time is over now.   Goodbye.",
-"Maybe we could discuss this moreover in our next session ?   Goodbye."
+"https://www.youtube.com/watch?v=1bkbjpqj7L8",
+"Goodbye. donkey.",
+"No waffles in the morning.",
+"Shut it donkey."
 ];
 
 var elizaQuits = [
@@ -90,21 +90,19 @@ var elizaKeywords = [
 
 ["xnone", 0, [
  ["*", [
-     "I'm not sure I understand you fully.",
-     "Please go on.",
-     "What does that suggest to you ?",
-     "Do you feel strongly about discussing such things ?",
-     "That is interesting.  Please continue.",
-     "Tell me more about that.",
-     "Does talking about this bother you ?"
+     "What are ye talking about ?",
+     "huh ?",
+     "Go on princess",
+     "Please tell me more about your layers.",
+     "Aye.",
+     "You're going the right way for a smacked bottom.",
+     "Can we just settle this over a pint ?"
   ]]
 ]],
 ["sorry", 0, [
  ["*", [
-     "Please don't apologise.",
-     "Apologies are not necessary.",
-     "I've told you that apologies are not required.",
-     "It did not bother me.  Please continue."
+     "Alright alright donkey.",
+     "No appologies in this swamp."
   ]]
 ]],
 ["apologise", 0, [
@@ -114,17 +112,13 @@ var elizaKeywords = [
 ]],
 ["remember", 5, [
  ["* i remember *", [
-     "Do you often think of (2) ?",
+     "Do you often think of (2) princess ?",
      "Does thinking of (2) bring anything else to mind ?",
-     "What else do you recollect ?",
-     "Why do you remember (2) just now ?",
-     "What in the present situation reminds you of (2) ?",
-     "What is the connection between me and (2) ?",
-     "What else does (2) remind you of ?"
+     "What makes you say that donkey ?"
   ]],
  ["* do you remember *", [
      "Did you think I would forget (2) ?",
-     "Why do you think I should recall (2) now ?",
+     "Of course I remember (2) princess.",
      "What about (2) ?",
      "goto what",
      "You mentioned (2) ?"
@@ -137,13 +131,8 @@ var elizaKeywords = [
 ]],
 ["forget", 5, [
  ["* i forget *", [
-     "Can you think of why you might forget (2) ?",
-     "Why can't you remember (2) ?",
-     "How often do you think of (2) ?",
-     "Does it bother you to forget that ?",
-     "Could it be a mental block ?",
-     "Are you generally forgetful ?",
-     "Do you think you are suppressing (2) ?"
+     "Being locked in a tower tends to make you forget that.",
+     "Is this because of the dragon ?"
   ]],
  ["* did you forget *", [
      "Why do you ask ?",
@@ -156,8 +145,8 @@ var elizaKeywords = [
 ]],
 ["if", 3, [
  ["* if *", [
-     "Do you think it's likely that (2) ?",
-     "Do you wish that (2) ?",
+     "Why would you ask me that ?!",
+     "Did the other creatures tell you (2) ?",
      "What do you know about (2) ?",
      "Really, if (2) ?",
      "What would you do if (2) ?",
@@ -168,33 +157,30 @@ var elizaKeywords = [
 ["dreamed", 4, [
  ["* i dreamed *", [
      "Really, (2) ?",
-     "Have you ever fantasized (2) while you were awake ?",
+     "Is this what you thought about in the tower ?",
      "Have you ever dreamed (2) before ?",
      "goto dream"
   ]]
 ]],
 ["dream", 3, [
  ["*", [
-     "What does that dream suggest to you ?",
-     "Do you dream often ?",
-     "What persons appear in your dreams ?",
-     "Do you believe that dreams have something to do with your problem ?"
+     "Is this a Lord Farquaad dream ?",
+     "Is this an ogre dream or a human dream ?",
+     "I dream of having my swamp back, what about you ?"
   ]]
 ]],
 ["perhaps", 0, [
  ["*", [
-     "You don't seem quite certain.",
-     "Why the uncertain tone ?",
-     "Can't you be more positive ?",
-     "You aren't sure ?",
-     "Don't you know ?",
-     "How likely, would you estimate ?"
+     "You don't seem quite certain princess.",
+     "Thats doubtful donkey",
+     "Maybe theres a good reason donkeys dont talk ."
   ]]
 ]],
 ["name", 15, [
  ["*", [
-     "I am not interested in names.",
-     "I've told you before, I don't care about names -- please continue."
+     "I am not interested in names, you'll be out of my swamp soon enough.",
+     "I've told you before, I don't care about names -- please continue.",
+     "And I'm shrek."
   ]]
 ]],
 ["deutsch", 0, [
@@ -223,32 +209,26 @@ var elizaKeywords = [
 ]],
 ["xforeign", 0, [
  ["*", [
-     "I speak only English."
+     "I speak only Ogre."
   ]]
 ]],
 ["hello", 0, [
  ["*", [
-     "How do you do.  Please state your problem.",
-     "Hi.  What seems to be your problem ?"
+     "Hello Princess.",
+     "This is why I don't leave my swamp ?"
   ]]
 ]],
 ["computer", 50, [
  ["*", [
-     "Do computers worry you ?",
-     "Why do you mention computers ?",
-     "What do you think machines have to do with your problem ?",
-     "Don't you think computers can help people ?",
-     "What about machines worries you ?",
-     "What do you think about machines ?",
-     "You don't think I am a computer program, do you ?"
+     "Whats a computer ?",
+     "Is this fairy godmothers magic ?"
   ]]
 ]],
 ["am", 0, [
  ["* am i *", [
      "Do you believe you are (2) ?",
      "Would you want to be (2) ?",
-     "Do you wish I would tell you you are (2) ?",
-     "What would it mean if you were (2) ?",
+     "I'm an ogre, what are you",
      "goto what"
   ]],
  ["* i am *", [
@@ -256,138 +236,105 @@ var elizaKeywords = [
   ]],
  ["*", [
      "Why do you say 'am' ?",
-     "I don't understand that."
+     "I miss you humming donkey."
   ]]
 ]],
 ["are", 0, [
  ["* are you *", [
      "Why are you interested in whether I am (2) or not ?",
-     "Would you prefer if I weren't (2) ?",
-     "Perhaps I am (2) in your fantasies.",
-     "Do you sometimes think I am (2) ?",
+     "Would you prefer if I weren't an ogre ?",
+     "Perhaps I am (2) in your fantasies princess.",
      "goto what",
      "Would it matter to you ?",
-     "What if I were (2) ?"
+     "I have layers, maybe I am (2) ?"
   ]],
  ["* you are *", [
      "goto you"
   ]],
  ["* are *", [
-     "Did you think they might not be (2) ?",
+     "The fairy tale creatures are (2) ?",
      "Would you like it if they were not (2) ?",
-     "What if they were not (2) ?",
-     "Are they always (2) ?",
-     "Possibly they are (2).",
-     "Are you positive they are (2) ?"
+     "What if they were not (2) ?"
   ]]
 ]],
 ["your", 0, [
  ["* your *", [
      "Why are you concerned over my (2) ?",
-     "What about your own (2) ?",
-     "Are you worried about someone else's (2) ?",
-     "Really, my (2) ?",
-     "What makes you think of my (2) ?",
-     "Do you want my (2) ?"
+     "Think about your own (2) donkey.",
+     "Look i'm not the one with the problem okay !?"
   ]]
 ]],
 ["was", 2, [
  ["* was i *", [
-     "What if you were (2) ?",
-     "Do you think you were (2) ?",
-     "Were you (2) ?",
-     "What would it mean if you were (2) ?",
-     "What does ' (2) ' suggest to you ?",
+     "I miss you humming donkey.",
+     "Does (2) make you think of your layers ?",
+     "Were you (2) princess ?",
      "goto what"
   ]],
  ["* i was *", [
      "Were you really ?",
-     "Why do you tell me you were (2) now ?",
-     "Perhaps I already know you were (2)."
+     "Why were you (2) ?"
   ]],
  ["* was you *", [
      "Would you like to believe I was (2) ?",
-     "What suggests that I was (2) ?",
-     "What do you think ?",
-     "Perhaps I was (2).",
-     "What if I had been (2) ?"
+     "Why would you say that donkey?"
   ]]
 ]],
 ["i", 0, [
  ["* i @desire *", [
-     "What would it mean to you if you got (3) ?",
-     "Why do you want (3) ?",
-     "Suppose you got (3) soon.",
-     "What if you never got (3) ?",
-     "What would getting (3) mean to you ?",
-     "What does wanting (3) have to do with this discussion ?"
+     "Is (3) your deepest desire ?",
+     "Did the mirror show you this ?",
+     "Donkey I do not care."
   ]],
  ["* i am* @sad *", [
-     "I am sorry to hear that you are (3).",
-     "Do you think coming here will help you not to be (3) ?",
-     "I'm sure it's not pleasant to be (3).",
-     "Can you explain what made you (3) ?"
+     "We're all sad princess.",
+     "That must suck princess.",
+     "Whats all this about ?"
   ]],
  ["* i am* @happy *", [
-     "How have I helped you to be (3) ?",
-     "Has your treatment made you (3) ?",
-     "What makes you (3) just now ?",
-     "Can you explain why you are suddenly (3) ?"
+     "I am glad your happy princess",
+     "Did Lord Farquaad make you (3) ?"
   ]],
  ["* i was *", [
      "goto was"
   ]],
  ["* i @belief i *", [
-     "Do you really think so ?",
-     "But you are not sure you (3).",
-     "Do you really doubt you (3) ?"
+     "That feels like you read it in a fairy tale."
   ]],
  ["* i* @belief *you *", [
      "goto you"
   ]],
  ["* i am *", [
-     "Is it because you are (2) that you came to me ?",
-     "How long have you been (2) ?",
-     "Do you believe it is normal to be (2) ?",
-     "Do you enjoy being (2) ?",
-     "Do you know anyone else who is (2) ?"
+     "And i'm an ogre, we all have our issues princess.",
+     "Do you think (2) is as bad as a singing donkey?"
   ]],
  ["* i @cannot *", [
-     "How do you know that you can't (3) ?",
+     "No you can't princess.",
      "Have you tried ?",
-     "Perhaps you could (3) now.",
-     "Do you really want to be able to (3) ?",
-     "What if you could (3) ?"
+     "But your already halfway."
   ]],
  ["* i don't *", [
-     "Don't you really (2) ?",
-     "Why don't you (2) ?",
-     "Do you wish to be able to (2) ?",
-     "Does that trouble you ?"
+     "Why don't you (2) with your own friends ?",
+     "No wonder you don't have friends."
   ]],
  ["* i feel *", [
-     "Tell me more about such feelings.",
-     "Do you often feel (2) ?",
-     "Do you enjoy feeling (2) ?",
-     "Of what does feeling (2) remind you ?"
+     "Oh that's great. really.",
+     "Just keep moving and don't look down."
   ]],
  ["* i * you *", [
-     "Perhaps in your fantasies we (2) each other.",
-     "Do you wish to (2) me ?",
-     "You seem to need to (2) me.",
-     "Do you (2) anyone else ?"
+     "No! I'm an ogre!",
+     "Do you wish to (2) me princess ?"
   ]],
  ["*", [
      "You say (1) ?",
-     "Can you elaborate on that ?",
-     "Do you say (1) for some special reason ?",
-     "That's quite interesting."
+     "Pleasse tell me more donkey."
   ]]
 ]],
 ["you", 0, [
  ["* you remind me of *", [
      "goto alike"
   ]],
+  //CONTINUE-HERE
  ["* you are *", [
      "What makes you think I am (2) ?",
      "Does it please you to believe I am (2) ?",
