@@ -38,3 +38,11 @@ input {
     color: #4F5400;
     font-size: 1.2em;
 }
+
+.old-font {
+    font-family: 'Tangerine', cursive;
+    font-size: 1.5em;
+    padding: .2em .2em;
+    text-align: center;
+    margin-left: .5em;
+}
