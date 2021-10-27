@@ -336,19 +336,15 @@ var elizaKeywords = [
   ]],
   //CONTINUE-HERE
  ["* you are *", [
-     "What makes you think I am (2) ?",
+     "Do you wish I was that princess ?",
      "Does it please you to believe I am (2) ?",
      "Do you sometimes wish you were (2) ?",
      "Perhaps you would like to be (2)."
   ]],
  ["* you* me *", [
-     "Why do you think I (2) you ?",
-     "You like to think I (2) you -- don't you ?",
-     "What makes you think I (2) you ?",
-     "Really, I (2) you ?",
-     "Do you wish to believe I (2) you ?",
-     "Suppose I did (2) you -- what would that mean ?",
-     "Does someone else believe I (2) you ?"
+     "I would never (2) you princess.",
+     "Donkey there is no way ?",
+     "My layers don't permit this ?"
   ]],
  ["* you *", [
      "We were discussing you -- not me.",
@@ -359,10 +355,9 @@ var elizaKeywords = [
 ]],
 ["yes", 0, [
  ["*", [
-     "You seem to be quite positive.",
-     "You are sure.",
-     "I see.",
-     "I understand."
+     "Is that so ?",
+     "Are you sure about that donkey ?",
+     "Alright."
   ]]
 ]],
 ["no", 0, [
@@ -376,37 +371,36 @@ var elizaKeywords = [
      "Who do you think you are talking about ?"
   ]],
  ["*", [
-     "Are you saying no just to be negative?",
-     "You are being a bit negative.",
-     "Why not ?",
+     "Very well, I'll take care of it.",
+     "Well then.",
+     "You sound like Farquaad.",
      "Why 'no' ?"
   ]]
 ]],
 ["my", 2, [
  ["$ * my *", [
-     "Does that have anything to do with the fact that your (2) ?",
-     "Lets discuss further why your (2).",
-     "Earlier you said your (2).",
+     "Would this have to do with the fact that your (2) ?",
+     "How about you tak about your (2) to someone else.",
+     "Very well mY hIgHnEsS.",
      "But your (2)."
   ]],
  ["* my* @family *", [
-     "Tell me more about your family.",
-     "Who else in your family (4) ?",
+     "My family abandoned me.",
+     "Whats a family ?",
      "Your (3) ?",
-     "What else comes to your mind when you think of your (3) ?"
+     "No donkey we aren't family ?"
   ]],
  ["* my *", [
      "Your (2) ?",
-     "Why do you say your (2) ?",
-     "Does that suggest anything else which belongs to you ?",
+     "Ah this and your kingdom ?",
      "Is it important to you that your (2) ?"
   ]]
 ]],
 ["can", 0, [
  ["* can you *", [
-     "You believe I can (2) don't you ?",
+     "You believe I can (2) don't you princess ?",
      "goto what",
-     "You want me to be able to (2).",
+     "No donkey I cannot do that.",
      "Perhaps you would like to be able to (2) yourself."
   ]],
  ["* can i *", [
